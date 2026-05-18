@@ -25,6 +25,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes wordmark-warm-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: translate3d(0.16rem, 0.3rem, 0) scale(1.1);
+  }
+
+  50% {
+    opacity: 0.68;
+    transform: translate3d(0.28rem, 0.5rem, 0) scale(1.14);
+  }
+}
+
+.warm-wordmark-shadow {
+  z-index: 0;
+  opacity: 0.56;
+  filter: blur(7px) saturate(1.42) brightness(1.38);
+  mix-blend-mode: screen;
+  transform: translate3d(0.18rem, 0.34rem, 0) scale(1.12);
+  transform-origin: center;
+  animation: wordmark-warm-glow 4.2s ease-in-out infinite;
+}
+
 @keyframes pedal-float {
   0%,
   100% {
@@ -61,6 +84,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .warm-wordmark-shadow,
   .pedal-float,
   .pedal-aura {
     animation: none;

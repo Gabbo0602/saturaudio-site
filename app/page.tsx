@@ -11,11 +11,19 @@ export default function SaturaudioLanding() {
               alt="Saturaudio Logo"
               className="w-[72px] shrink-0 opacity-95 drop-shadow-[0_14px_34px_rgba(0,0,0,0.65)] sm:w-[84px]"
             />
-            <img
-              src="/wordmark.png"
-              alt="Saturaudio"
-              className="h-[36px] w-auto object-contain sm:h-[46px]"
-            />
+            <span className="wordmark-glow relative inline-flex">
+              <img
+                src="/wordmark-transparent.png"
+                alt=""
+                aria-hidden="true"
+                className="warm-wordmark-shadow absolute left-0 top-0 h-[36px] w-auto object-contain sm:h-[46px]"
+              />
+              <img
+                src="/wordmark-transparent.png"
+                alt="Saturaudio"
+                className="relative z-10 h-[36px] w-auto object-contain sm:h-[46px]"
+              />
+            </span>
           </div>
 
           {/* Subtitle */}
