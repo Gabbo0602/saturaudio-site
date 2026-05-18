@@ -5,11 +5,16 @@ export default function SaturaudioLanding() {
       <section className="relative min-h-screen flex flex-col items-center bg-black px-5 pb-12 pt-4 sm:px-6 sm:pb-16 sm:pt-6 md:justify-center md:py-16 overflow-hidden">
         <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center text-center">
           {/* Logo */}
-          <div className="mb-8 w-[min(82vw,380px)] text-left md:w-[560px]">
+          <div className="mb-8 flex w-[min(82vw,380px)] items-center gap-3 text-left md:w-[560px]">
             <img
-              src="/logo-real.png"
+              src="/logo.png"
               alt="Saturaudio Logo"
-              className="w-[72px] opacity-95 drop-shadow-[0_14px_34px_rgba(0,0,0,0.65)] sm:w-[84px]"
+              className="w-[72px] shrink-0 opacity-95 drop-shadow-[0_14px_34px_rgba(0,0,0,0.65)] sm:w-[84px]"
+            />
+            <img
+              src="/wordmark.png"
+              alt="Saturaudio"
+              className="h-[36px] w-auto object-contain sm:h-[46px]"
             />
           </div>
 
@@ -26,7 +31,7 @@ export default function SaturaudioLanding() {
             <img
               src="/pedal-real.png"
               alt="Saturaudio Pedal"
-              className="pedal-float relative z-10 w-[min(82vw,380px)] md:w-[560px] drop-shadow-[0_28px_95px_rgba(0,0,0,0.62)] transition-[filter] duration-700 ease-out hover:drop-shadow-[0_34px_115px_rgba(0,0,0,0.72)]"
+              className="relative z-10 w-[min(82vw,380px)] md:w-[560px] drop-shadow-[0_28px_95px_rgba(0,0,0,0.62)] transition-[filter] duration-700 ease-out hover:drop-shadow-[0_34px_115px_rgba(0,0,0,0.72)]"
             />
           </div>
 
