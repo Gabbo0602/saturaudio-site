@@ -24,3 +24,45 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes pedal-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-0.35deg);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(0.35deg);
+  }
+}
+
+@keyframes aura-breathe {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.pedal-float {
+  animation: pedal-float 7s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.pedal-aura {
+  animation: aura-breathe 8s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pedal-float,
+  .pedal-aura {
+    animation: none;
+  }
+}
