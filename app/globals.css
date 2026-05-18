@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -51,11 +51,11 @@ body {
 @keyframes pedal-float {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) rotate(-0.35deg);
+    transform: translate3d(0, 0, 0) rotate(-0.25deg) scale(1);
   }
 
   50% {
-    transform: translate3d(0, -12px, 0) rotate(0.35deg);
+    transform: translate3d(0, -8px, 0) rotate(0.25deg) scale(1.01);
   }
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .pedal-float {
-  animation: pedal-float 7s ease-in-out infinite;
+  animation: pedal-float 8.5s ease-in-out infinite;
   transform-origin: center;
   will-change: transform;
 }
